@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppointKaro - Revolutionizing Appointments</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="Appoint.png" alt="AppointKaro Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Revolutionizing Appointments</h1>
+            <p>Save time, avoid queues, and get ahead with <strong>AppointKaro</strong>.</p>
+            <p class="sub-details">Manage appointments effortlessly across various sectors such as healthcare, legal services, salons, and more. Stay ahead of your schedule with real-time updates and smart notifications.</p>
+            <a href="#services" class="cta-button">Explore Services</a>
+        </div>
+    </section>    
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="Doctor.jpg" alt="Doctor Appointments">
+                    <h3>Doctor Appointments</h3>
+                    <p>Find doctors, book instantly, and save time.</p>
+                    <a href="doctor.html" class="details-link">Book appointment</a>
+                </div>
+                <div class="service-card">
+                    <img src="salon.jpg" alt="Salon Services">
+                    <h3>Salon Services</h3>
+                    <p>Book your next salon appointment without the wait.</p>
+                    <a href="salon.html" class="details-link">Book appointment</a>
+                </div>
+                <div class="service-card">
+                    <img src="legal.jpg" alt="Legal Consultations">
+                    <h3>Legal Consultations</h3>
+                    <p>Schedule legal advice sessions effortlessly.</p>
+                    <a href="legal.html" class="details-link">Book appointment</a>
+                </div>
+                <div class="service-card">
+                    <img src="home.jpg" alt="Home Services">
+                    <h3>Home Services</h3>
+                    <p>From plumbing to cleaning, book home services now.</p>
+                    <a href="home-services.html" class="details-link">Book appointment</a>
+                </div>
+                <div class="service-card">
+                    <img src="Real-Estates.jpg" alt="Real-Estates Services">
+                    <h3>Real-Estates Services</h3>
+                    <p>Book your next Real-Estates expert appointment without the wait.</p>
+                    <a href="Real-Estates.html" class="details-link">Book appointment</a>
+                </div>
+                <div class="service-card">
+                    <img src="Education Consultants.jpg" alt="Education Consultants">
+                    <h3>Education Consulatant</h3>
+                    <p>Find Educational Consultants near.For your carrer planning, book now, and save time.</p>
+                    <a href="Education Consultants.html" class="details-link">Book appointment</a>
+                </div>
+                <div class="service-card">
+                    <img src="Doctor.jpg" alt="Doctor Appointments">
+                    <h3>Doctor Appointments</h3>
+                    <p>Find doctors, book instantly, and save time.</p>
+                    <a href="doctor.html" class="details-link">Book appointment</a>
+                </div>
+                <div class="service-card">
+                    <img src="Doctor.jpg" alt="Doctor Appointments">
+                    <h3>Doctor Appointments</h3>
+                    <p>Find doctors, book instantly, and save time.</p>
+                    <a href="doctor.html" class="details-link">Book appointment</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About AppointKaro</h2>
+            <p>AppointKaro is designed to streamline the way you book appointments across industries. From salons to doctors, legal services to home services, we've got you covered. Our mission is to reduce the 1 year and 2 months you spend waiting in your life.</p>
+            <p>Experience the ease of dynamic availability updates from service providers, ensuring you're always in control of your time.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonials">
+                <blockquote>"AppointKaro has saved me hours of waiting at salons and doctors' clinics. Highly recommend!"</blockquote>
+                <cite>– A Happy Customer</cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:contact@appointkaro.com">contact@appointkaro.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">+1-234-567-890</a></p>
+            <p>Follow us:</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 AppointKaro. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Smooth Scroll Script -->
+    <script>
+        $(document).ready(function () {
+            $('a[href^="#"]').on('click', function (e) {
+                e.preventDefault();
+                const target = $($(this).attr('href'));
+                if (target.length) {
+                    $('html, body').animate({ scrollTop: target.offset().top - 70 }, 800);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

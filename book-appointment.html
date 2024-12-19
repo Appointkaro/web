@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="Appoint.png" alt="AppointKaro Logo">
+        </div>
+    </header>
+
+    <section class="booking-section">
+        <div class="container">
+            <h1>Book Your Appointment</h1>
+            <form action="confirm.html" method="POST">
+                <label for="service">Service:</label>
+                <input type="text" id="service" name="service" value="" readonly>
+
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="appointment-date" required>
+
+                <label for="time">Select Time:</label>
+                <input type="time" id="time" name="appointment-time" required>
+
+                <button type="submit" class="cta-button">Confirm Appointment</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 AppointKaro. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Auto-fill the service based on the query parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const service = urlParams.get('service');
+        if (service) {
+            document.getElementById('service').value = service.charAt(0).toUpperCase() + service.slice(1);
+        }
+    </script>
+</body>
+</html>
+
