@@ -1,0 +1,108 @@
+.create-account-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;  /* Centers the container */
+  padding: 20px;
+  background: whitesmoke;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  box-sizing: border-box; 
+  
+}
+
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .subtitle {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  .form input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .create-account-btn {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(90deg, #4a90e2, #007aff);
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .create-account-btn:hover {
+    background: linear-gradient(90deg, #007aff, #4a90e2);
+  }
+  /* Make sure the body and html cover the full height of the page */
+html, body, .container {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;  /* Aligns to the top */
+  }
+  
+ img{
+  width: 100px;
+  height: auto;
+ }
+ /* Create a flex container for the elements */
+.account, .gap, .Gmail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.account, .Gmail {
+  margin: 0 15px; /* Add equal space between each element */
+}
+
+.gap {
+  margin: 0 15px; /* Add space on both sides of 'or' */
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Styling for the Gmail link */
+.Gmail a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.Gmail a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.link {
+  color: blue;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.account {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 20px;
+}

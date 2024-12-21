@@ -1,0 +1,45 @@
+
+.navbar1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     background: linear-gradient(90deg, #0066ff, #003399); /* Modern blue gradient */
+    color: #fff;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background 0.3s ease;
+  }
+  .booking-section {
+    width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+   
+    
+  }
+  .containerbook{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: center;
+  }
+  .cta-buttonbook {
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(90deg, #ffc107, #ff8800);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+  }
+  .logo img {
+    width: 100px;  /* Fixed size for the logo */
+    height: 70px;   /* Maintain aspect ratio */
+  }
