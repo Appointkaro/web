@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import './TwoFactorAuthentication.css';
 import { useNavigate } from "react-router-dom";
+import Logo from '../assets/images/Appoint.png'
 
 function TwoFactorAuthentication() {
   const [otp, setOtp] = useState("");
@@ -20,7 +21,7 @@ function TwoFactorAuthentication() {
   return (
     <div className="container">
       <div className="frame">
-        <img src="src/your-image.jpg" alt="2FA Image" className="image" />
+        <img src={Logo} alt="2FA Image" className="image" />
         <div className='text'>
         <p className="text">Enter the  OTP sent to ******9090</p>
       </div>
