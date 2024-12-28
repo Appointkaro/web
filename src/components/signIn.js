@@ -31,20 +31,20 @@ const SignIn = () => {
       setErrorMessage("Please fill in both email and password.");
       return;
     }
-
+    navigate("/dashboard");
     // Mock login check (you should replace this with actual authentication logic)
-    if (email === "test@example.com" && password === "password123") {
-      // Navigate to the dashboard page after successful login
-      navigate("/dashboard");
-      // Reset the form data after successful login
-      setFormData({
-        email: "",
-        password: "",
-      });
-    } else {
-      // Display error message for invalid credentials
-      setErrorMessage("Invalid email or password.");
-    }
+    // if (email === "reshma.kakimanu@com" && password === "password123") {
+    //   // Navigate to the dashboard page after successful login
+     
+    //   // Reset the form data after successful login
+    //   setFormData({
+    //     email: "",
+    //     password: "",
+    //   });
+    // } else {
+    //   // Display error message for invalid credentials
+    //   setErrorMessage("Invalid email or password.");
+    // }
   };
 
   return (
