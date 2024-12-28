@@ -29,25 +29,19 @@ const SignUp = () => {
   };
   const validate = () => {
     const newErrors = {};
-    const flag = false
     if(!formData.name){
       newErrors.name = 'Name is required';
-      flag = true
     } 
     if(!formData.mobile){
       newErrors.mobile = 'Mobile Number is required';
-      flag = true
     } 
     if(!formData.email){
       newErrors.email = 'Email is required';
-      flag = true
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
       newErrors.email = 'Email is invalid';
-      flag = true
     }
     if (formData.password !== formData.confirmPassword) {
       newErrors.confirmPassword = 'Passwords do not match!';
-      flag = true
     } 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
