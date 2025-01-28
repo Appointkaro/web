@@ -1,0 +1,42 @@
+.user-profile-container {
+    display: flex;
+    justify-content: space-between; /* Space between user info and search bar */
+    width: 120%; /* Ensure full width */
+    padding: 20px;
+    background-color: slateblue;
+    border-radius: 20px; /* Rounded corners */
+    margin-bottom: 20px;
+    margin-right: 630px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Space between the text and the image */
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: flex-start; /* Align the content of user-info to the top */
+  }
+  
+  .user-details {
+    margin-right: 15px; /* Optional: Adjust space between text and image */
+  }
+  
+  .user-image {
+    border-radius: 50%;
+ 
+  }
+  .img-Container {
+    margin-right: 50px;
+  }
+  
+  .search-bar {
+    margin-top: 10px; /* Position the search bar below the text */
+  }
+  
+  .search-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 200px; /* Control the width of the search input */
+  }
+  
